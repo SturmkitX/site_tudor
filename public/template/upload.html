@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <title>Upload file</title>
+    </head>
+
+    <body>
+        <div style="width: 50%" align="center" class="center-block">
+            <form action="/item" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="art_title">Title</label>
+                    <input type="text" id="art_title" name="art_title" class="form-control" placeholder="Enter title here..." />
+                </div>
+
+                <div class="form-group">
+                    <label for="art_description">Description</label>
+                    <input type="text" id="art_description" name="art_description" class="form-control" placeholder="Enter description here..." />
+                </div>
+
+                <div class="form-group">
+                    <label for="art_file">File</label>
+                    <input type="file" id="art_file" name="art_file" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="art_submit"></label>
+                    <input type="submit" id="art_submit" class="form-control text-primary" value="Submit" />
+                </div>
+            </form>
+        </div>
+
+    </body>
+
+</html>
